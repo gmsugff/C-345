@@ -6,23 +6,23 @@ int main(){
 
     int arrI[] = { 5, 2, 8, 1, 6 };
     float arrF[] = { 3.14, 2.71, 1.618, 0.123 };
-    cort c;
+    cort <int>c(arrI);
+    cort <float>f(arrF);
+    std::cout << "ÃŒÃ ÃªÃ±Ã¨Ã¬Ã Ã«Ã¼Ã­Ã»Ã© Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥ int: " << c.Max(arrI) << std::endl;
     
-    std::cout << "Ìàêñèìàëüíûé ýëåìåíò â ìàññèâå int: " << c.Max(arrI) << std::endl;
-    
-    std::cout << "Ìèíèìàëüíûé ýëåìåíò â ìàññèâå float: " << c.Min(arrF) << std::endl;
+    std::cout << "ÃŒÃ¨Ã­Ã¨Ã¬Ã Ã«Ã¼Ã­Ã»Ã© Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥ float: " << f.Min(arrF) << std::endl;
 
    c.bubbleS(arrI);
-    std::cout << "Îòñîðòèðîâàííûé ìàññèâ int ïîñëå ñîðòèðîâêè: ";
+    std::cout << "ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã­Ã­Ã»Ã© Ã¬Ã Ã±Ã±Ã¨Ã¢ int Ã¯Ã®Ã±Ã«Ã¥ Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢ÃªÃ¨: ";
     for (int num : arrI) {
         std::cout << num << " ";
     }
     std::cout << std::endl;
 
-    std::cout << "Èíäåêñ ýëåìåíòà 8 â ìàññèâå int: " << c.binSe(arrI, 8) << std::endl;
+    std::cout << "ÃˆÃ­Ã¤Ã¥ÃªÃ± Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  8 Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥ int: " << c.binSe(arrI, 8) << std::endl;
 
     c.repEl(arrI, 8, 10);
-    std::cout << "Ìàññèâ int ïîñëå çàìåíû ýëåìåíòà: ";
+    std::cout << "ÃŒÃ Ã±Ã±Ã¨Ã¢ int Ã¯Ã®Ã±Ã«Ã¥ Ã§Ã Ã¬Ã¥Ã­Ã» Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã : ";
     for (int num : arrI) {
         std::cout << num << " ";
     }
