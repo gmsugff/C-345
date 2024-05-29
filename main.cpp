@@ -6,11 +6,11 @@ int main(){
 
     int arrI[] = { 5, 2, 8, 1, 6 };
     float arrF[] = { 3.14, 2.71, 1.618, 0.123 };
-    cort <int>c(arrI);
-    cort <float>f(arrF);
+    cort <int>c();
+    
     std::cout << "Ìàêñèìàëüíûé ýëåìåíò â ìàññèâå int: " << c.Max(arrI) << std::endl;
     
-    std::cout << "Ìèíèìàëüíûé ýëåìåíò â ìàññèâå float: " << f.Min(arrF) << std::endl;
+    std::cout << "Ìèíèìàëüíûé ýëåìåíò â ìàññèâå float: " << c.Min(arrF) << std::endl;
 
    c.bubbleS(arrI);
     std::cout << "Îòñîðòèðîâàííûé ìàññèâ int ïîñëå ñîðòèðîâêè: ";
